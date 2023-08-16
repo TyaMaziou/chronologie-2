@@ -193,7 +193,7 @@ header{
 
 /*  Films et Series a venir debut*/
     .heading{
-        max-width: 80%;
+        max-width: 85%;
         margin-left: auto;
         margin-right: auto;
         font-size: 1.2rem;
@@ -223,9 +223,7 @@ header{
     }
 
     .box .box-img img:hover{
-        transform: translate(-2.5%, 0%);
-        width: 105%;
-        position: absolute;
+        transform: scale(1.05);
     }
 
     .box h3{
