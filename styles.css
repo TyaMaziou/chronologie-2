@@ -161,12 +161,11 @@ header{
         text-transform: uppercase;
     }
 
-    .home-text h1{
+    h1{
         color: var(--bg-color);
         text-shadow: 3px 3px 5px #000000;
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: 700;
-        margin-bottom: 1rem;
     }
 
     .play{
