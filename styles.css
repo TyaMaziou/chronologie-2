@@ -193,7 +193,7 @@ header{
 
 /*  Films et Series a venir debut*/
     .heading{
-        max-width: 968px;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
         font-size: 1.2rem;
@@ -203,31 +203,29 @@ header{
     }
 
     .movies-container{
-        max-width: 968px;
+        max-width: 80%;
         margin-right: auto;
         margin-left: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(180px, auto));
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+        gap: 2rem;
         margin-top: 2rem;
     }
 
-    .box .box-img{
-        width: 100%;
-        height: 280px;
-    }
 
     .box .box-img img{
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
-        transition: width 0.4s;
+        transition: 0.2s;
         transition-timing-function: linear;
+
     }
 
     .box .box-img img:hover{
-        transform: translateY(-10px);
-        width: 500px;
+        transform: translate(-2.5%, 0%);
+        width: 105%;
+        position: absolute;
     }
 
     .box h3{
