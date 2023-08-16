@@ -12,6 +12,20 @@
     scroll-behavior: smooth;
 }
 
+
+    
+
+#scrollUp
+{
+z-index: 3;
+position: fixed;
+bottom : 1.0%;
+right: 1.5%;
+opacity: 0;
+transition: 0.2s;
+transition-timing-function: linear;
+}
+
 /* variables */
 
 :root{
@@ -36,7 +50,7 @@ header{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +108,7 @@ header{
     #menu-icon{
         font-size: 24px;
         cursor: pointer;
-        z-index: 1000001;
+        z-index: 2;
         display: none;
     }
 
@@ -289,7 +303,6 @@ header{
     .swiper-button-next, .swiper-button-prev{
         position: static !important;
         margin: 0 0 0 10px !important;
-        font-weight: ;
     }
 
     .swiper-button-next::after, .swiper-button-prev::after{
