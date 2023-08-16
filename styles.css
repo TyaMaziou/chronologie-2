@@ -24,7 +24,6 @@
 body{
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c6c01dbb-5dd0-4bd7-9576-bd91d0f43e20/da950d0-380269b7-f7a0-4ffc-8fa9-7ae053666d72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9jNmMwMWRiYi01ZGQwLTRiZDctOTU3Ni1iZDkxZDBmNDNlMjAvZGE5NTBkMC0zODAyNjliNy1mN2EwLTRmZmMtOGZhOS03YWUwNTM2NjZkNzIuanBnIn1dXX0.Ph9NP8H40BCc8thk50hgKSaMC0kKCLxehlqy498q9AA");
     background-attachment: scroll;
-    background-repeat: no-repeat;
     color: var(--bg-color);
 }
 
@@ -228,6 +227,7 @@ header{
     .box h3{
         font-size: 0.9rem;
         font-weight: 500;
+
     
     }
 
