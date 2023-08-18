@@ -12,20 +12,6 @@
     scroll-behavior: smooth;
 }
 
-
-    
-
-#scrollUp
-{
-z-index: 3;
-position: fixed;
-bottom : 1.0%;
-right: 1.5%;
-opacity: 0;
-transition: 0.2s;
-transition-timing-function: linear;
-}
-
 /* variables */
 
 :root{
@@ -38,6 +24,7 @@ transition-timing-function: linear;
 body{
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c6c01dbb-5dd0-4bd7-9576-bd91d0f43e20/da950d0-380269b7-f7a0-4ffc-8fa9-7ae053666d72.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9jNmMwMWRiYi01ZGQwLTRiZDctOTU3Ni1iZDkxZDBmNDNlMjAvZGE5NTBkMC0zODAyNjliNy1mN2EwLTRmZmMtOGZhOS03YWUwNTM2NjZkNzIuanBnIn1dXX0.Ph9NP8H40BCc8thk50hgKSaMC0kKCLxehlqy498q9AA");
     background-attachment: scroll;
+    background-repeat: no-repeat;
     color: var(--bg-color);
 }
 
@@ -50,7 +37,7 @@ header{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +95,7 @@ header{
     #menu-icon{
         font-size: 24px;
         cursor: pointer;
-        z-index: 2;
+        z-index: 1000001;
         display: none;
     }
 
@@ -227,21 +214,54 @@ header{
 
 
     .box .box-img img{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+
+        
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 500px;
+     }
+
+    .box .box-img img:hover .shape1 .shape2{
         width: 100%;
-        height: auto;
-        object-fit: cover;
-        transition: 0.2s;
-        transition-timing-function: linear;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+
+        
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1120;
     }
 
-    .box .box-img img:hover{
-        transform: scale(1.05);
-    }
+    
+.shape1,
+.shape2 {
+  stroke-dasharray: 1120;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition-timing-function: linear;
+  transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+}
+.shape1 {
+  stroke-dashoffset: 1120;
+}
+.shape2 {
+  stroke-dashoffset: -1120;
+}
 
     .box h3{
         font-size: 0.9rem;
         font-weight: 500;
-
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
     
     }
 
@@ -338,7 +358,6 @@ header{
         margin-right: auto;
         margin-top: 2rem;
     }
-
 
 
 /* chronologie Marvel fin */

@@ -30,6 +30,7 @@ var swiper = new Swiper(".coming-container", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints:{
+
     280:{
       slidesPerView:1,
       spaceBetween: 10,
@@ -54,6 +55,7 @@ var swiper = new Swiper(".coming-container", {
       slidesPerView:4,
       spaceBetween: 20,
     },
+
   },
 });
 
